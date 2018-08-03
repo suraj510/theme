@@ -1,0 +1,32 @@
+  .signup{
+	  width: 85%;
+    height: 20%;
+    margin-left: 5%;
+	  background-color: #fcf9fa;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2%;
+    color: rgb(37, 4, 4);
+    box-shadow: 10px 10px grey;
+}
+.textbox{
+  width: 100%;
+ margin-top: 2px;
+}
+.login-button{
+  width: 90%;
+  height: 4%;
+  align-content: center;
+	padding:1.5% !important;	
+  background-color: #673ab7;
+  font-size: 1.5em;
+  color: #fff !important;
+  margin-top: 5%;
+}
+.header{
+  width: 97%;
+	padding:1.5%;	
+  background-color: #673ab7;
+  font-size: 1.5em;
+  color: #fff !important;
+}

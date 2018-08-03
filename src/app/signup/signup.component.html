@@ -1,0 +1,55 @@
+<div>
+<div class="signup" >
+ <div class="col-lg-12">
+    <div container class="justifier"> 
+        <div class="header">
+            signup
+        </div>
+            <div class="col-sm-6">
+                     <mat-form-field class="textbox">
+                         <input matInput placeholder="Full Name">
+                         </mat-form-field>
+                 </div>
+                 <div class="col-sm-6">
+                                <mat-form-field class="textbox">
+                                  <input matInput placeholder="Enter your email" [formControl]="email" required>
+                                  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-6">
+                                    <mat-form-field class="textbox">
+                                      <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" >
+                                      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-sm-6">                           
+                                              <mat-form-field class="textbox">
+                                                <input matInput placeholder="confirm your password" [type]="hides ? 'password' : 'text'">
+                                                <mat-icon matSuffix (click)="hides = !hides">{{hides ? 'visibility' : 'visibility_off'}}</mat-icon>
+                                              </mat-form-field>
+                                          </div>
+                                <div class="col-sm-6">
+                                        <mat-form-field class="textbox">
+                                                <input matInput [matDatepicker]="picker" placeholder="Choose a birthdate">
+                                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                                <mat-datepicker #picker></mat-datepicker>
+                                              </mat-form-field>
+                                </div>
+                                <div class="col-sm-6">
+                                <mat-radio-group>
+                                    Gender
+                                        <mat-radio-button value="1"> Male</mat-radio-button>
+                                        <mat-radio-button value="2">Female</mat-radio-button>
+                                      </mat-radio-group>
+                                </div>
+                                <div class="col-sm-6">
+                                        <button mat-button class="login-button">Submit</button>
+                                </div>
+                                
+                                <a routerLink="/login"><h3>sign in account</h3> </a>
+    </div>
+  </div>
+</div>
+</div>
+
+
